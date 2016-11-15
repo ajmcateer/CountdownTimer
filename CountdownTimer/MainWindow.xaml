@@ -34,6 +34,7 @@
         <Label x:Name="lblSec" Content="" FontSize="20" Margin="148,0,7,0" HorizontalContentAlignment="Center" Height="34" VerticalAlignment="Top"/>
         <Label Content=":" FontSize="20" Margin="143,0,20,0" Height="34" VerticalAlignment="Top"/>
         <Label Content=":" FontSize="20" Margin="116,0,52,0" Height="34" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="2020 Election" HorizontalAlignment="Left" Margin="0,-7,0,25" FontSize="10" Height="25" VerticalAlignment="Bottom" Width="184" HorizontalContentAlignment="Center"/>
 
     </Grid>
 </Window>
