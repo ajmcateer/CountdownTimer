@@ -28,6 +28,9 @@ namespace CountdownTimer
 
         public MainWindow()
         {
+            this.Top = Properties.Settings.Default.WindowTop;
+            this.Left = Properties.Settings.Default.WindowLeft;
+
             InitializeComponent();
             //Start with a date and time
             EventDT = Convert.ToDateTime("11/03/2020 7:00AM");
@@ -80,6 +83,13 @@ namespace CountdownTimer
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Properties.Settings.Default.WindowTop = this.Top;
+            Properties.Settings.Default.WindowLeft = this.Left;
+            Properties.Settings.Default.Save();
         }
     }
 }

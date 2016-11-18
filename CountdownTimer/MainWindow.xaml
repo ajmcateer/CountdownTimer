@@ -9,7 +9,7 @@
         ShowInTaskbar="False"
         Topmost="True"
         WindowStyle="None"
-        Title="MainWindow" Height="45" Width="186.017" MouseDown="Window_MouseDown" BorderThickness="1" BorderBrush="Black" MouseRightButtonUp="Window_MouseRightButtonUp">
+        Title="MainWindow" Height="45" Width="186.017" MouseDown="Window_MouseDown" BorderThickness="1" BorderBrush="Black" MouseRightButtonUp="Window_MouseRightButtonUp" Closing="Window_Closing">
     <Window.ContextMenu>
         <ContextMenu>
             <MenuItem Header="Close Me!" Click="MenuItem_Click"/>
